@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_screenutil: ^5.9.3   # এটার ইনটেনটেশন টা খেয়াল রাখবো, 'flutter_screenutil: ^5.9.3' ইউজ করা হয় UI Responsive করার জন্য
+  pdfx:
+  path_provider:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -63,6 +65,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:        # এটার(assets:) সাথে উপরের "uses-material-design: true" টা সোজাসোজি থাকতে হবে মাস্ট। একটাও কমবেশি হলে হবে না। এখানে ইনটেনটেশন ফলো করে পাইথন এর মতো।
+    - assets/pdf/
     - assets/images/   # এখানে যাস্ট ফোল্ডার পাথ তা পর্যন্ত বলে দিতে হবে তাহলে assets->images ফোল্ডারের ভিতর যত ইমেজ আছে তা সব ব্যাবহার করতে পারবো। স্লাস(/) গুলো খেয়াল রাখতে হবে
 
 

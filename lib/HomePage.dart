@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Cources.dart';
+import 'Books.dart';
 import 'EnrollPage.dart';
 import 'AboutPage.dart';
+import 'ProgressPage.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -181,7 +182,7 @@ class _HomepageState extends State<Homepage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CourcesELearning()),
+                        MaterialPageRoute(builder: (context) => ProgressPage()),
                       );
                     },
                     child: Container(
@@ -224,7 +225,7 @@ class _HomepageState extends State<Homepage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CourcesELearning()),
+                        MaterialPageRoute(builder: (context) => ProgressPage()),
                       );
                     },
                     child: Container(
@@ -272,7 +273,7 @@ class _HomepageState extends State<Homepage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CourcesELearning()),
+                        MaterialPageRoute(builder: (context) => ProgressPage()),
                       );
                     },
                     child: Container(
@@ -315,7 +316,7 @@ class _HomepageState extends State<Homepage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => CourcesELearning()),
+                        MaterialPageRoute(builder: (context) => ProgressPage()),
                       );
                     },
                     child: Container(
@@ -355,22 +356,32 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ],
               ),
+
               Padding(
                 padding: EdgeInsets.all(10),
                 child: Text("Test Schedule", style: TextStyle(fontSize: 20,color: Colors.white),),
               ),
+
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SizedBox(width: 10,),
-                    Container(
-                      height: 110,
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.4),
-                        borderRadius: BorderRadius.circular(10),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ProgressPage()),
+                        );
+                      },
+                      child: Container(
+                        height: 110,
+                        width: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                       ),
                     ),
                     SizedBox(width: 10,),
@@ -400,6 +411,15 @@ class _HomepageState extends State<Homepage> {
                     borderRadius: BorderRadius.circular(10),
                     ),
                    ),
+                    SizedBox(width: 10,),
+                    Container(
+                      height: 110,
+                      width: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
                   ],
                 ),
               ),
